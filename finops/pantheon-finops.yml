@@ -1,0 +1,102 @@
+name: Pantheon FinOps
+description: >-
+  Financial operations guidance for teams using the Pantheon WebOps platform.
+  Costs on Pantheon break into two independent dimensions: Workspace Plans
+  (team/organization features) and Site Plans (per-site capacity). Understanding
+  both is essential for accurate budget forecasting, especially for agencies and
+  enterprises managing large site portfolios.
+url: https://pantheon.io/plans/pricing
+
+cost_model:
+  type: Two-dimensional subscription
+  billing_cycles:
+    - monthly
+    - annual (discounted)
+  dimensions:
+    - name: Workspace Plan
+      description: >-
+        Controls team features, support tier, and organization-level capabilities.
+        One workspace plan covers all sites in that workspace.
+      tiers:
+        - Silver: Free
+        - Gold: $500/month or $6,000/year
+        - Platinum: Custom
+        - Diamond: Custom
+
+    - name: Site Plan
+      description: >-
+        Per-site capacity plan controlling traffic, app containers, and custom
+        domain limits. Each live site requires its own plan.
+      tiers:
+        - Basic: $55/month or $500/year
+        - Performance Small: $200/month or $1,925/year
+        - Performance Medium: $350/month or $3,300/year
+        - Performance Large: $700/month or $6,600/year
+        - Performance XL: $1,150/month or $11,000/year
+        - Elite: Custom
+
+cost_optimization:
+  - strategy: Annual billing
+    description: >-
+      All site plans and Gold workspace plans offer significant savings on
+      annual versus monthly billing. Performance Small annual ($1,925/yr)
+      saves ~$475 vs. monthly ($2,400/yr).
+    savings_estimate: 10–20% vs monthly billing
+
+  - strategy: Sandbox sites for development
+    description: >-
+      Sandbox sites (included in all workspace plans) do not require a paid
+      Site Plan. Use sandboxes for development and testing to avoid paying
+      for non-production traffic capacity.
+
+  - strategy: Right-size site plans
+    description: >-
+      Match Site Plan to actual traffic needs. Pantheon's Global CDN caches
+      aggressively — actual container load is often a fraction of raw visit
+      counts. Audit actual uncached traffic before upgrading.
+
+  - strategy: Multidev on Gold+
+    description: >-
+      Gold workspace plan includes Multidev environments, eliminating the need
+      for separate staging or QA site subscriptions. For agencies managing
+      many sites, a single Gold workspace can replace multiple additional
+      environment costs.
+
+  - strategy: Terminus automation
+    description: >-
+      Use Terminus CLI for bulk operations (create, clone, deploy) to reduce
+      manual effort and operational overhead. Automate routine deployments
+      via CI/CD to reduce time-to-live and lower developer costs.
+
+overage_risks:
+  - type: Traffic overage
+    description: >-
+      Exceeding monthly visit limits triggers Pantheon notifications. Prolonged
+      overages may require upgrading the Site Plan. Monitor traffic regularly
+      via the Pantheon Dashboard or `terminus env:metrics` command.
+  - type: Custom domain limits
+    description: >-
+      Each Site Plan caps the number of custom domains. Plan for domain growth
+      when choosing a tier for multisite or multilingual deployments.
+
+budget_forecasting:
+  example_small_agency:
+    workspace: Gold — $6,000/year
+    sites: 10 x Performance Small — $19,250/year
+    total_annual: ~$25,250
+    notes: Covers unlimited sites in workspace; each site has its own plan cost.
+
+  example_enterprise:
+    workspace: Platinum — custom pricing
+    sites: Mix of Performance Large and Elite — custom
+    notes: >-
+      Enterprise accounts typically negotiate volume discounts on site plans
+      and consolidated billing. Contact Pantheon Sales for custom quotes.
+
+key_links:
+  - label: Pricing overview
+    url: https://pantheon.io/plans/pricing
+  - label: Account billing management
+    url: https://docs.pantheon.io/guides/account-mgmt/plans
+  - label: Site plan management
+    url: https://docs.pantheon.io/guides/account-mgmt/plans/site-plans

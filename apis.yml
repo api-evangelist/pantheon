@@ -1,0 +1,86 @@
+aid: pantheon
+name: Pantheon
+description: >-
+  Pantheon is a WebOps platform for WordPress and Drupal that provides a REST
+  API and CLI (Terminus) for managing sites, environments, deployments, domains,
+  backups, and team workflows. The platform serves over 700,000 sites with
+  built-in dev/staging/production environments, Global CDN, automated updates,
+  and portfolio governance tools.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/pantheon/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+tags:
+  - WebOps
+  - WordPress
+  - Drupal
+  - CMS
+  - Hosting
+  - CDN
+  - DevOps
+  - Deployments
+  - Sites
+  - Environments
+apis:
+  - aid: pantheon:pantheon-api
+    name: Pantheon REST API
+    description: >-
+      The Pantheon platform REST API (terminus.pantheon.io) underpins the
+      Terminus CLI and enables programmatic management of sites, environments,
+      deployments, domains, backups, teams, organizations, SSH keys, secrets,
+      and workflows on the Pantheon WebOps platform.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.pantheon.io/terminus
+    baseURL: https://terminus.pantheon.io
+    tags:
+      - Sites
+      - Environments
+      - Deployments
+      - Domains
+      - Backups
+      - Teams
+      - Organizations
+      - Secrets
+      - Workflows
+      - Multidev
+    properties:
+      - type: Documentation
+        url: https://docs.pantheon.io
+      - type: TerminusCLI
+        url: https://docs.pantheon.io/terminus
+      - type: TerminusCommands
+        url: https://docs.pantheon.io/terminus/commands
+      - type: Authentication
+        url: https://docs.pantheon.io/machine-tokens
+      - type: OpenAPI
+        url: https://raw.githubusercontent.com/api-evangelist/pantheon/refs/heads/main/openapi.yml
+    contact:
+      - FN: Pantheon Support
+        url: https://pantheon.io/support
+common:
+  - type: Website
+    url: https://pantheon.io
+  - type: Documentation
+    url: https://docs.pantheon.io
+  - type: GitHubOrg
+    url: https://github.com/pantheon-systems
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/getpantheon
+  - type: Blog
+    url: https://pantheon.io/blog
+  - type: Pricing
+    url: https://pantheon.io/plans/pricing
+  - type: StatusPage
+    url: https://status.pantheon.io
+  - type: X
+    url: https://x.com/getpantheon
+  - type: Plans
+    url: plans/pantheon-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/pantheon-rate-limits.yml
+  - type: FinOps
+    url: finops/pantheon-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

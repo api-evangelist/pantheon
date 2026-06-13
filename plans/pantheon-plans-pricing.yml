@@ -1,0 +1,126 @@
+name: Pantheon Plans and Pricing
+description: >-
+  Pantheon offers two pricing dimensions: Workspace Plans (for teams/organizations)
+  and Site Plans (per individual site). Workspace Plans control team features and
+  support levels. Site Plans control traffic capacity, app containers, custom domains,
+  and uptime SLAs. Next.js sites use the same site plan pricing as WordPress/Drupal.
+url: https://pantheon.io/plans/pricing
+
+workspace_plans:
+  - name: Silver
+    price_monthly: 0
+    price_annual: 0
+    description: Free workspace for individuals and small teams getting started on Pantheon.
+    features:
+      - Git-based CI/CD workflows
+      - Terminus CLI access
+      - Basic chat support
+      - 2 sandbox sites
+      - Dev/staging/production environments
+      - Global CDN and HTTPS
+      - Automated and manual backups
+
+  - name: Gold
+    price_monthly: 500
+    price_annual: 6000
+    description: >-
+      For growing teams that need advanced workflow tooling, automated updates,
+      and portfolio management across multiple sites.
+    features:
+      - Everything in Silver
+      - Multidev environments
+      - Automated upstream updates
+      - Visual regression testing
+      - Portfolio management dashboard
+      - 24/7 support
+      - Unlimited sites per workspace
+
+  - name: Platinum
+    price_monthly: custom
+    price_annual: custom
+    description: >-
+      For enterprise teams requiring multi-zone failover, SSO, and priority support.
+    features:
+      - Everything in Gold
+      - Multi-zone failover
+      - SSO/SAML integration
+      - Advanced CDN with WAF
+      - Elite site uptime SLA
+      - 24/7 priority support
+
+  - name: Diamond
+    price_monthly: custom
+    price_annual: custom
+    description: >-
+      Highest-tier enterprise plan with dedicated support and maximum platform capabilities.
+    features:
+      - Everything in Platinum
+      - Dedicated support team
+      - Custom enterprise SLAs
+      - Advanced security features
+
+site_plans:
+  - name: Basic
+    price_monthly: 55
+    price_annual: 500
+    monthly_visits: '25,000–35,000'
+    custom_domains: 5
+    app_containers: 1
+    description: Entry-level live site plan for low-traffic WordPress and Drupal sites.
+
+  - name: Performance Small
+    price_monthly: 200
+    price_annual: 1925
+    monthly_visits: '25,000–35,000'
+    custom_domains: 10
+    app_containers: 1
+    description: Small performance tier with enhanced caching and support for more domains.
+
+  - name: Performance Medium
+    price_monthly: 350
+    price_annual: 3300
+    monthly_visits: '50,000–70,000'
+    custom_domains: 15
+    app_containers: 2
+    description: Medium performance tier with two containers for moderate-traffic sites.
+
+  - name: Performance Large
+    price_monthly: 700
+    price_annual: 6600
+    monthly_visits: '150,000–210,000'
+    custom_domains: 35
+    app_containers: 3
+    description: Large performance tier for high-traffic sites with three app containers.
+
+  - name: Performance XL
+    price_monthly: 1150
+    price_annual: 11000
+    monthly_visits: '300,000–420,000'
+    custom_domains: 70
+    app_containers: 4
+    description: Extra-large performance tier for very high-traffic sites.
+
+  - name: Elite
+    price_monthly: custom
+    price_annual: custom
+    monthly_visits: unlimited
+    custom_domains: 270
+    app_containers: '4+'
+    description: >-
+      Enterprise tier with 99.95% uptime SLA, unlimited traffic, multi-zone
+      failover, and dedicated infrastructure.
+
+common_features_all_plans:
+  - Dev, staging, and production environments
+  - Automated and manual backups
+  - Global CDN, caching, and load balancing
+  - HTTPS/SSL support
+  - SOC 2, GDPR, and FERPA compliance
+  - Terminus CLI access
+  - Git-based workflows
+  - 99.9% SLO (99.95% SLA on Elite)
+
+nextjs_additional_features:
+  - Full Next.js support (SSR, SSG, ISR, API routes)
+  - Secrets management
+  - Environment-scoped configuration

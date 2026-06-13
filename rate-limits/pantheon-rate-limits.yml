@@ -1,0 +1,71 @@
+name: Pantheon Rate Limits
+description: >-
+  Pantheon enforces rate limits at several layers: the Terminus REST API
+  (terminus.pantheon.io), the Global CDN edge, and per-site traffic thresholds
+  tied to Site Plan capacity. Specific numeric limits on the Terminus API are
+  not publicly documented; limits below reflect known platform constraints and
+  best-practice guidance from Pantheon documentation.
+url: https://docs.pantheon.io/terminus
+
+api_rate_limits:
+  - scope: Terminus REST API (terminus.pantheon.io)
+    description: >-
+      The Terminus CLI communicates with terminus.pantheon.io over HTTPS using
+      machine tokens for authentication. Pantheon does not publish explicit
+      per-minute or per-hour request quotas for the management API. Scripted
+      automations using Terminus in CI/CD pipelines should implement retry
+      logic with back-off to handle transient 429 or 503 responses.
+    limits:
+      - type: Concurrent requests
+        value: not publicly specified
+        notes: >-
+          Burst scripting against the API (e.g., looping over hundreds of sites)
+          may result in temporary throttling. Pantheon recommends adding delays
+          between bulk operations.
+      - type: Paged request entry limit
+        value: 100 entries per page
+        header: null
+        notes: >-
+          The Terminus client enforces PAGED_REQUEST_ENTRY_LIMIT = 100 when
+          paginating collection endpoints.
+
+cdn_and_traffic_limits:
+  - scope: Global CDN — per-site traffic
+    description: >-
+      Traffic capacity is governed by the Site Plan purchased. Exceeding plan
+      limits triggers overage notifications and may require a plan upgrade.
+      Pantheon's Global CDN handles caching at the edge; cached responses do
+      not count against container capacity.
+    limits:
+      - plan: Basic
+        monthly_visits: '25,000–35,000'
+      - plan: Performance Small
+        monthly_visits: '25,000–35,000'
+      - plan: Performance Medium
+        monthly_visits: '50,000–70,000'
+      - plan: Performance Large
+        monthly_visits: '150,000–210,000'
+      - plan: Performance XL
+        monthly_visits: '300,000–420,000'
+      - plan: Elite
+        monthly_visits: unlimited
+
+authentication:
+  - type: Machine Token
+    description: >-
+      Long-lived tokens generated in Pantheon Personal Settings. Equivalent to
+      username/password credentials. Used in CI/CD and automation; revoke when
+      no longer needed.
+    expiry: never
+    url: https://docs.pantheon.io/machine-tokens
+
+headers_and_errors:
+  - code: 429
+    meaning: Too Many Requests — slow down API scripting; add back-off delay
+  - code: 503
+    meaning: Service Unavailable — transient; retry with exponential back-off
+
+notes:
+  - Pantheon does not publish a public rate-limit policy document for the management API.
+  - For bulk site operations via Terminus, Pantheon recommends pacing requests.
+  - Status of all API services is tracked at https://status.pantheon.io
