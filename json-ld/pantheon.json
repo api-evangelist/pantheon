@@ -1,0 +1,105 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://pantheon.io",
+  "name": "Pantheon",
+  "description": "Pantheon is a WebOps platform for WordPress and Drupal that provides a REST API and CLI (Terminus) for managing sites, environments, deployments, domains, backups, and team workflows. The platform serves over 700,000 sites with built-in dev/staging/production environments, Global CDN, automated updates, and portfolio governance tools.",
+  "url": "https://pantheon.io",
+  "sameAs": [
+    "https://github.com/pantheon-systems",
+    "https://www.linkedin.com/company/getpantheon",
+    "https://x.com/getpantheon"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "url": "https://pantheon.io/support",
+    "contactType": "customer support"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Pantheon WebOps Platform",
+    "url": "https://pantheon.io/plans/pricing"
+  },
+  "subjectOf": [
+    {
+      "@type": "TechArticle",
+      "name": "Why You Shouldn't Store LLM API keys in WordPress Database",
+      "url": "https://pantheon.io/blog/why-you-shouldnt-store-llm-api-keys-wordpress-database",
+      "datePublished": "2026-06-02",
+      "author": {
+        "@type": "Person",
+        "name": "Chris Reynolds"
+      },
+      "keywords": ["Security", "WordPress", "AI", "LLM", "API Keys"]
+    },
+    {
+      "@type": "TechArticle",
+      "name": "Direct GitHub Integration Is Now Generally Available on Pantheon",
+      "url": "https://pantheon.io/blog/direct-github-integration-now-generally-available-pantheon",
+      "datePublished": "2026-05-26",
+      "author": {
+        "@type": "Person",
+        "name": "Lucy Hitz"
+      },
+      "keywords": ["GitHub", "Deployment", "CI/CD", "Terminus"]
+    },
+    {
+      "@type": "TechArticle",
+      "name": "Next.js On Pantheon Is Available For All Now",
+      "url": "https://pantheon.io/blog/nextjs-ga",
+      "datePublished": "2026-04-13",
+      "author": {
+        "@type": "Person",
+        "name": "Duncan Schouten"
+      },
+      "keywords": ["Next.js", "Web Hosting", "Google Cloud", "JavaScript"]
+    },
+    {
+      "@type": "TechArticle",
+      "name": "Global CDN Beta: Built-In Bot Protection, Now Available",
+      "url": "https://pantheon.io/blog/gcdn-beta",
+      "datePublished": "2026-04-20",
+      "author": {
+        "@type": "Person",
+        "name": "Conor Bauer"
+      },
+      "keywords": ["CDN", "Bot Protection", "Security", "Cloudflare"]
+    },
+    {
+      "@type": "TechArticle",
+      "name": "A New Era of WordPress Search: Elasticsearch in Beta Now",
+      "url": "https://pantheon.io/blog/elasticsearch-beta",
+      "datePublished": "2026-04-08",
+      "author": {
+        "@type": "Person",
+        "name": "Scott Buscemi"
+      },
+      "keywords": ["WordPress", "Elasticsearch", "Search", "Infrastructure"]
+    }
+  ],
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "SoftwareApplication",
+      "name": "Pantheon REST API",
+      "description": "The Pantheon platform REST API (terminus.pantheon.io) underpins the Terminus CLI and enables programmatic management of sites, environments, deployments, domains, backups, teams, organizations, SSH keys, secrets, and workflows.",
+      "applicationCategory": "DeveloperApplication",
+      "url": "https://docs.pantheon.io/terminus",
+      "featureList": [
+        "Site management",
+        "Environment management (Dev/Test/Live/Multidev)",
+        "Deployment orchestration",
+        "Domain management",
+        "Backup management",
+        "Team and organization management",
+        "SSH key management",
+        "Secrets management",
+        "Workflow automation",
+        "Global CDN",
+        "Elasticsearch",
+        "GitHub integration",
+        "Next.js hosting"
+      ]
+    }
+  }
+}
