@@ -6,7 +6,7 @@ description: >-
   backups, and team workflows. The platform serves over 700,000 sites with
   built-in dev/staging/production environments, Global CDN, automated updates,
   and portfolio governance tools.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/pantheon/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
@@ -30,7 +30,7 @@ apis:
       Terminus CLI and enables programmatic management of sites, environments,
       deployments, domains, backups, teams, organizations, SSH keys, secrets,
       and workflows on the Pantheon WebOps platform.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.pantheon.io/terminus
     baseURL: https://terminus.pantheon.io
     tags:
