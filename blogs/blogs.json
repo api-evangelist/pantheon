@@ -1,86 +1,21 @@
 {
-  "provider": "pantheon",
-  "url": "https://pantheon.io/blog",
-  "fetched": "2026-06-14T20:42:17Z",
-  "posts": [
-    {
-      "title": "Why You Shouldn't Store LLM API keys in WordPress Database",
-      "url": "https://pantheon.io/blog/why-you-shouldnt-store-llm-api-keys-wordpress-database",
-      "date": "2026-06-02",
-      "author": "Chris Reynolds",
-      "summary": "Discusses security risks introduced by WordPress 7.0's new AI Connectors framework and why LLM API keys should be stored using environment variables or dedicated secret management solutions rather than in the WordPress database.",
-      "tags": [
-        "Security",
-        "WordPress",
-        "AI",
-        "LLM",
-        "API Keys",
-        "Best Practices"
-      ]
-    },
-    {
-      "title": "Direct GitHub Integration Is Now Generally Available on Pantheon",
-      "url": "https://pantheon.io/blog/direct-github-integration-now-generally-available-pantheon",
-      "date": "2026-05-26",
-      "author": "Lucy Hitz",
-      "summary": "Pantheon launches its GitHub Application as generally available for all Gold, Platinum, and Diamond Workspace customers, enabling automatic code deployment from GitHub repositories to Pantheon environments without manual configuration.",
-      "tags": [
-        "GitHub",
-        "Deployment",
-        "CI/CD",
-        "Terminus",
-        "Developer Tools"
-      ]
-    },
-    {
-      "title": "Next.js On Pantheon Is Available For All Now",
-      "url": "https://pantheon.io/blog/nextjs-ga",
-      "date": "2026-04-13",
-      "author": "Duncan Schouten",
-      "summary": "Pantheon announces general availability of Next.js hosting for Gold tier customers and above, offering production-ready deployment with built-in performance optimization via Google Cloud Run and enterprise-grade developer workflows.",
-      "tags": [
-        "Next.js",
-        "Web Hosting",
-        "Google Cloud",
-        "JavaScript",
-        "Developer Tools"
-      ]
-    },
-    {
-      "title": "Global CDN Beta: Built-In Bot Protection, Now Available",
-      "url": "https://pantheon.io/blog/gcdn-beta",
-      "date": "2026-04-20",
-      "author": "Conor Bauer",
-      "summary": "Pantheon launches next-generation Global CDN in beta powered by Cloudflare, providing built-in bot protection at no extra cost to ensure legitimate traffic reaches WordPress and Drupal sites.",
-      "tags": [
-        "CDN",
-        "Bot Protection",
-        "Security",
-        "Cloudflare",
-        "Infrastructure"
-      ]
-    },
-    {
-      "title": "A New Era of WordPress Search: Elasticsearch in Beta Now",
-      "url": "https://pantheon.io/blog/elasticsearch-beta",
-      "date": "2026-04-08",
-      "author": "Scott Buscemi",
-      "summary": "Pantheon launches Elasticsearch in beta for WordPress sites, delivering enterprise-grade full-text search with relevance ranking, faceted filtering, typo tolerance, and real-time indexing.",
-      "tags": [
-        "WordPress",
-        "Elasticsearch",
-        "Search",
-        "Infrastructure",
-        "Beta"
-      ]
-    }
-  ],
   "repo": "pantheon",
   "feeds": [
     {
+      "source": "https://pantheon.io/blog/feed",
+      "feed_url": "https://pantheon.io/blog/feed",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
       "source": "https://www.linkedin.com/company/getpantheon",
-      "error": "HTTPError"
+      "feed_url": "https://www.linkedin.com/company/getpantheon",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
+  "fetched": "2026-06-27T12:03:07Z",
   "post_count": 0
 }
