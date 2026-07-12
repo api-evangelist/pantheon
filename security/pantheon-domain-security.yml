@@ -1,0 +1,27 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: pantheon.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep  1 17:20:44 2026 GMT
+  hsts: true
+  hsts_max_age: 300
+- host: docs.pantheon.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  4 23:35:11 2026 GMT
+  hsts: false
+- host: terminus.pantheon.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 25 22:30:14 2026 GMT
+  hsts: null
+domains:
+- domain: pantheon.io
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none
