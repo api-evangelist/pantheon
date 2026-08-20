@@ -30,6 +30,17 @@ tags:
   - Hosting
   - CDN
   - DevOps
+  - Deployment
+  - Sites
+  - Environments
+tags_raw:
+  - WebOps
+  - WordPress
+  - Drupal
+  - CMS
+  - Hosting
+  - CDN
+  - DevOps
   - Deployments
   - Sites
   - Environments
@@ -45,6 +56,17 @@ apis:
     humanURL: https://docs.pantheon.io/terminus
     baseURL: https://terminus.pantheon.io
     tags:
+      - Sites
+      - Environments
+      - Deployment
+      - Domains
+      - Backups
+      - Team
+      - Organization
+      - Secrets
+      - Workflows
+      - Multidev
+    tags_raw:
       - Sites
       - Environments
       - Deployments
