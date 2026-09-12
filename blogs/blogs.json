@@ -2,23 +2,18 @@
   "repo": "pantheon",
   "feeds": [
     {
+      "source": "https://www.linkedin.com/company/getpantheon",
+      "error": "HTTPError"
+    },
+    {
       "source": "https://pantheon.io/blog/feed",
       "feed_url": "https://pantheon.io/blog/feed",
       "title": "",
       "saved": 0,
-      "method": "feed",
-      "nature": "vendor-blog",
-      "nature_basis": "path_blog"
-    },
-    {
-      "source": "https://www.linkedin.com/company/getpantheon",
-      "feed_url": "https://www.linkedin.com/company/getpantheon",
-      "title": "",
-      "saved": 0,
-      "method": "none"
+      "method": "feed"
     }
   ],
-  "fetched": "2026-08-30T22:33:40Z",
+  "fetched": "2026-09-06T19:17:18Z",
   "post_count": 10,
   "feed_nature": "vendor-blog",
   "feed_nature_basis": "path_blog",
