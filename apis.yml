@@ -43,7 +43,7 @@ tags:
   - DevOps
   - Deployment
   - Sites
-  - Environments
+  - Environment
 tags_raw:
   - WebOps
   - WordPress
@@ -68,7 +68,7 @@ apis:
     baseURL: https://terminus.pantheon.io
     tags:
       - Sites
-      - Environments
+      - Environment
       - Deployment
       - Domains
       - Backups
