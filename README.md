@@ -1,4 +1,4 @@
-# Pantheon (pantheon)
+# Pantheon
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,71 +66,112 @@
 
 Pantheon is a WebOps platform for WordPress and Drupal that provides a REST API and CLI (Terminus) for managing sites, environments, deployments, domains, backups, and team workflows. The platform serves over 700,000 sites with built-in dev/staging/production environments, Global CDN, automated updates, and portfolio governance tools.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/pantheon/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/pantheon/refs/heads/main/apis.yml)
+**Areas:** WebOps · WordPress · Drupal · CMS · Hosting · CDN · DevOps · Deployment · Sites · Environment
 
-## Tags
+## Pantheon on APIs.io
 
-- WebOps
-- WordPress
-- Drupal
-- CMS
-- Hosting
-- CDN
-- DevOps
-- Deployments
-- Sites
-- Environments
+Everything profiled for Pantheon is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/pantheon/](https://apis.io/providers/pantheon/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (1)
 
-- **Created:** 2026-06-13
-- **Modified:** 2026-06-13
+- [Pantheon REST API](https://apis.io/apis/pantheon/pantheon-api/) — The Pantheon platform REST API (terminus.pantheon.io) underpins the Terminus CLI and enables programmatic management of sites, environments, deployments,…
 
-## APIs
+### Published properties
 
-### Pantheon REST API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-The Pantheon platform REST API (terminus.pantheon.io) underpins the Terminus CLI and enables programmatic management of sites, environments, deployments, domains, backups, teams, organizations, SSH keys, secrets, and workflows on the Pantheon WebOps platform.
+#### MCP servers (1)
 
-- **Human URL:** [https://docs.pantheon.io/terminus](https://docs.pantheon.io/terminus)
-- **Base URL:** `https://terminus.pantheon.io`
+Model Context Protocol servers that expose the API to agents.
 
-#### Tags
+- [pantheon](https://apis.io/servers/pantheon/pantheon/)
 
-- Sites
-- Environments
-- Deployments
-- Domains
-- Backups
-- Teams
-- Organizations
-- Secrets
-- Workflows
-- Multidev
+#### Security (2)
 
-#### Properties
+Authentication, trust centre, and vulnerability disclosure.
 
-- [Documentation](https://docs.pantheon.io)
-- [Terminus C L I](https://docs.pantheon.io/terminus)
-- [Terminus Commands](https://docs.pantheon.io/terminus/commands)
-- [Authentication](https://docs.pantheon.io/machine-tokens)
-- [OpenAPI](https://raw.githubusercontent.com/api-evangelist/pantheon/refs/heads/main/openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
+- [Pantheon Domain Security](https://apis.io/security/pantheon/pantheon-domain-security/)
+- [Pantheon Trust Center](https://apis.io/security/pantheon/pantheon-trust-center/)
 
-## Common Properties
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Pantheon Plans Pricing](https://apis.io/plans/pantheon/pantheon-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Pantheon Rate Limits](https://apis.io/rate-limits/pantheon/pantheon-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Pantheon Finops](https://apis.io/finops/pantheon/pantheon-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://pantheon.io)
 - [Documentation](https://docs.pantheon.io)
-- [Git Hub Org](https://github.com/pantheon-systems)
-- [LinkedIn](https://www.linkedin.com/company/getpantheon)
-- [Blog](https://pantheon.io/blog)
 - [Pricing](https://pantheon.io/plans/pricing)
-- [Status Page](https://status.pantheon.io)
-- [X (Twitter)](https://x.com/getpantheon)
-- [Plans](plans/pantheon-plans-pricing.yml)
-- [Rate Limits](rate-limits/pantheon-rate-limits.yml)
-- [Fin Ops](finops/pantheon-finops.yml)
+- [Blog](https://pantheon.io/blog)
+- [Status](https://status.pantheon.io)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 24.3** — emerging · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 68.3 |
+| Contract quality | 24.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 21.1 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 18.4 |
+
+**Agent readiness 28.3** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 16.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/pantheon/](https://apis.io/providers/pantheon/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Pantheon: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/pantheon/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
